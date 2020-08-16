@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<form action="/" method="post">
+<div class="container">
+  <h4>Check Here !</h4>
+    <div class="row">
+      <div class="input-field">
+        <input id="first_name2" type="number" class="validate" name="FS">
+        <label class="active" for="first_name2">Fasting Sugar</label>
+      </div>
+    </div>
+    <div class="row">
+      <p class="active">Frequent Urination</p>
+      <select name="FU">
+        <option value="1">YES</option>
+        <option value="0">NO</option>
+      </select>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit">Submit</button>
+  {% if data %}
+    <h4 style="color:{{data[1]}}">
+      {{data[0]}}
+    </h4>
+  {% endif %}
+
+</div>
+</form>
+
+{% endblock body %}

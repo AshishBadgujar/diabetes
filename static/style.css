@@ -1,0 +1,16 @@
+.brand-logo{
+    margin-left: 15px;
+}
+form{
+    margin-top: 40px;
+}
+.container{
+    max-width: 400px;
+    margin:10px auto;
+}
+select{
+    display: block;
+}
+.row p{
+    color: rgb(138, 138, 138);
+}
